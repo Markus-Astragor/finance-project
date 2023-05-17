@@ -1,0 +1,87 @@
+
+.Register{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.registerText{
+    margin-left: 2px;
+}
+
+.inputsBlock{
+    padding: 5px;
+    /* width: 70%; */
+    /* width: 370px; */
+}
+
+.registerForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* width: 370px; */
+}
+
+
+.inputsBlockCheckcbox{
+    width: 390px;
+    display: flex;
+    justify-content: start;
+    /* margin-top: 10px; */
+    /* margin-left: 2px; */
+}
+
+.nameForFields{
+    display: block;
+    font-weight: 600;
+}
+
+
+/* .inputsBlockCheckcbox > div {
+    margin: 5px;
+} */
+
+.CheckboxWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.Checkbox{
+    accent-color: #047857;
+    width: 16px;
+    height: 16px;
+}
+
+.inputsForFields{
+    margin-top: 5px;
+    padding: 6px;
+    width: 370px;
+}
+
+/*Styles for button*/
+
+.buttonWrapper{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+}
+
+.buttonWrapper > button {
+    padding: 15px  70px 15px 70px;
+    background-color: #047857;
+    color: white;
+    border: 2px solid #047857;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.buttonWrapper > button:hover{
+    background-color: #0ba97c;
+    border: 2px solid #0ba97c;
+    cursor: pointer;
+    
+}
