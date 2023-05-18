@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Register.module.css';
 import { NavLink } from 'react-router-dom';
-import { Axios } from 'axios';
+import  axios  from 'axios';
 import { useRef } from 'react';
 
 
@@ -10,6 +10,10 @@ import { useRef } from 'react';
 
 function Register() {
     //creating variables for inputsFields
+    
+    
+
+
     const email = useRef(null)
     const password = useRef(null);
     const repeatPassword = useRef(null);
@@ -71,7 +75,17 @@ function Register() {
         }
 
         
-
+        axios.post('http://localhost:8080/registration', {
+            email: emailSubmit,
+            password: passwordSubmit,
+        }).then(response => {
+            console.log(response);
+            const {data} = response;
+            const token = data.token;
+            localStorage.setItem('token', token);
+        }).catch(err => {
+            console.log(err);
+        })
 
         console.log(emailSubmit, passwordSubmit, repeatPasswordSubmit);
     }

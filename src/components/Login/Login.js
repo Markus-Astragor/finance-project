@@ -1,8 +1,30 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styles from './Login.module.css';
 import { NavLink } from 'react-router-dom';
+import axios from 'axios';
+
+
 
 function Login() {
+
+    const email = useRef(null)
+    const password = useRef(null);
+
+    const Submit = (e) => {
+        e.preventDefault();
+        const emailText = email.current.value;
+        const passwordText = password.current.value;
+
+        axios.post('http://localhost:8080/login', {
+            email: emailText,
+            password: passwordText,
+        }).then(response => {
+            console.log(response);
+        }).catch(err => {
+            console.log(err);
+        })
+    }
+
   return (
     <div className={styles.registerBlock}>
     <div className={styles.Register}>
@@ -14,15 +36,15 @@ function Login() {
         <div className={styles.registerForm}>
             <div className={styles.inputsBlock}>
                 <span className={styles.nameForFields}>Email Address</span>
-                <input type='email' className={styles.inputsForFields} required/>
+                <input type='email' className={styles.inputsForFields} required ref={email}/>
             </div>
             <div className={styles.inputsBlock}>
                 <span className={styles.nameForFields}>Password</span>
-                <input type='password' className={styles.inputsForFields} required/>    
+                <input type='password' className={styles.inputsForFields} required ref={password}/>    
             </div>
             <div className={styles.Submit}>
                 <div className={styles.buttonWrapper}>
-                    <button>Countinue</button>
+                    <button onClick={(e)=> {Submit(e)}}>Countinue</button>
                 </div>
             </div>
             <div className={styles.accountExists}>
