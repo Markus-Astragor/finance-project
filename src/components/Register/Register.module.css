@@ -85,3 +85,15 @@
     cursor: pointer;
     
 }
+
+
+/*Error paragraphs styles*/
+
+.errorParagrpahInvisible{
+    display: none;
+}
+
+.errorParagrpah{
+    display: block;
+    color: red;
+}
