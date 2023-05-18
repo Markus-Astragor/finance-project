@@ -52,3 +52,39 @@
   }
   .ldio_h620mft2yoh div { box-sizing: content-box; }
   
+
+
+  /*=======Resonsive=======*/
+
+  @media (max-width: 701px) {
+    .loadingio_spinner_cube_ku2mvh50cng{
+      width: 70px;
+      height: 70px;
+    }
+
+    .ldio_h620mft2yoh div {
+      width: 25px;
+      height: 25px;
+    }
+
+
+    .ldio_h620mft2yoh div:nth-child(2) {
+      top: 13.333333333333336px;
+      left: 43px;
+      background: #f55353;
+      animation-delay: -0.2s;
+    }
+    .ldio_h620mft2yoh div:nth-child(3) {
+      top: 43px;
+      left: 13.333333333333336px;
+      background: #feb139;
+      animation-delay: 0s;
+    }
+    .ldio_h620mft2yoh div:nth-child(4) {
+      top: 43px;
+      left: 43px;
+      background: #f6f54d;
+      animation-delay: -0.1s;
+    }
+
+  }

@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './main_page.module.css';
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
+import burgerIcon from '../../images/main_page/dollar-coin.png';
 
 function MainPage() {
+
+
+  const [burger, setBurger] = useState(false);
   return (
     <div className={styles.main_page}>
 
@@ -18,6 +22,14 @@ function MainPage() {
                   <div className={styles.navbar_item}>Money+</div>
                   <div className={styles.navbar_item}>Info</div>
                   <div className={styles.navbar_item}>QA</div>
+                </div>
+
+                <div onClick={() =>{setBurger(true)}} className={styles.burger}>
+                  <img src={burgerIcon}/>
+                </div>
+
+                <div className={burger ? styles.show_burger_navbar: styles.burger_navbar}>
+                  some Test
                 </div>
               </div>
 
