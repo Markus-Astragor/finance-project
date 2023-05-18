@@ -28,7 +28,7 @@ function Login() {
   return (
     <div className={styles.registerBlock}>
     <div className={styles.Register}>
-        <form>
+        <form className={styles.login_form}>
         <div className={styles.registerText}>
             <h2>Login</h2>
             <p style={{opacity: '0.5'}}>Welcome back. Enter your credentials to access your account</p>

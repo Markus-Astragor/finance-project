@@ -99,7 +99,7 @@ function Register() {
     return (
         <div className={styles.registerBlock}>
             <div className={styles.Register}>
-                <form>
+                <form className={styles.register_form}>
                     <div className={styles.registerText}>
                         <h2>Sign Up</h2>
                         <p style={{ opacity: '0.5' }}>Welcome. Enter your credentials to create your account</p>
