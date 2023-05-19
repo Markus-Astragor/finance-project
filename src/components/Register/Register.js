@@ -63,7 +63,7 @@ function Register() {
 
         e.preventDefault();
 
-        setLoader(true);
+        
 
         let emailSubmit = email.current.value;
         let passwordSubmit = password.current.value;
@@ -74,6 +74,8 @@ function Register() {
         if (resultCheckUser === 1) {
             return;
         }
+
+        setLoader(true);
 
 
         axios.post('http://localhost:8080/registration', {

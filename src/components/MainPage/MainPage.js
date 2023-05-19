@@ -28,9 +28,9 @@ function MainPage() {
                   <img src={burgerIcon}/>
                 </div>
 
-                <div className={burger ? styles.show_burger_navbar: styles.burger_navbar}>
+                {/* <div className={burger ? styles.show_burger_navbar: styles.burger_navbar}>
                   some Test
-                </div>
+                </div> */}
               </div>
 
               <div className={styles.main_page_content_info}>
