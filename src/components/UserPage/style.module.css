@@ -1,28 +1,27 @@
-
-
-.userpage{
+.userpage {
     padding-top: 50px;
 }
 
-.userpage_container{
+.userpage_container {
     max-width: 1400px;
     margin: 0 auto;
 }
-.userpage{
+
+.userpage {
     height: 100vh;
     width: 100%;
     background: url('../../images/main_page/background.png');
 }
 
 
-.content_header{
+.content_header {
     display: flex;
     align-items: center;
     margin-bottom: 140px;
 }
 
 
-.content_header_navbar{
+.content_header_navbar {
     display: flex;
     justify-content: space-between;
     color: white;
@@ -32,16 +31,17 @@
     padding-left: 50px;
 }
 
-.burger{
+.burger {
     display: none;
     cursor: pointer;
 }
-.navbar_item{
+
+.navbar_item {
     margin-right: 35px;
     cursor: pointer;
 }
 
-.navbar_item:after{
+.navbar_item:after {
     content: '';
     width: 0%;
     background-color: aliceblue;
@@ -51,6 +51,27 @@
     transition: 0.4s ease-out;
 }
 
-.navbar_item:hover::after{
+.navbar_item:hover::after {
     width: 100%;
+}
+
+
+/*Library apex charts*/
+
+.Diagramm{
+    width: 500px;
+    height: 400px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+#chart {
+    width: 100%;
+    height: 400px;
+    /* margin: 35px auto; */
 }
