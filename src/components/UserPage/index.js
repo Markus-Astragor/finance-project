@@ -23,7 +23,7 @@ function UserPage() {
       },
       plotOptions: {
         pie: {
-          customScale: 1
+          customScale: 0.9
         }
       }
     }
@@ -50,6 +50,7 @@ function UserPage() {
             <div className={styles.navbar_item}>QA</div>
           </div>
         </div>
+
         <div className={styles.BlockInfo}>
           <div className={styles.Diagramm}>
             <div id="chart"></div>
@@ -58,39 +59,50 @@ function UserPage() {
 
         <div className={styles.containerBottles}>
           <div className={styles.Bottles}>
+
             <div className={styles.center}>
               <div className={styles.circle}>
                 <div className={styles.circleText}>Text</div>
-                <div className={styles.wave}></div>
+                <div className={`${styles.wave} ${styles.wave1}`}></div>
               </div>
             </div>
+
           </div>
+
           <div className={styles.Bottles}>
             <div className={styles.center}>
               <div className={styles.circle}>
                 <div className={styles.circleText}>Text</div>
-                <div className={styles.wave}></div>
+                <div className={`${styles.wave} ${styles.wave2}`}></div>
               </div>
             </div>
           </div>
+
           <div className={styles.Bottles}>
             <div className={styles.center}>
               <div className={styles.circle}>
                 <div className={styles.circleText}>Text</div>
-                <div className={styles.wave}></div>
+                <div className={`${styles.wave} ${styles.wave3}`}></div>
               </div>
             </div>
           </div>
+
           <div className={styles.Bottles}>
             <div className={styles.center}>
               <div className={styles.circle}>
                 <div className={styles.circleText}>Text</div>
-                <div className={styles.wave}></div>
+                <div className={`${styles.wave} ${styles.wave4}`}></div>
               </div>
             </div>
           </div>
 
           </div>
+        </div>
+
+        <div className={styles.balance}>
+            <div className={styles.balance_block}>1096 $</div>
+            <div className={styles.balance_text}>balance</div>
+            <div className={styles.balance_type}>Wallet Card</div>
         </div>
 
       </div>

@@ -108,8 +108,9 @@ body {width: 100%; height: 100vh; background-color: #262626;}
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #fff;
-  border: 2px solid #fff;
+  background-color: #123369;
+  box-sizing: border-box;
+  border: 5px solid #0e1d67;
   border-radius: 50%;
   overflow: hidden;
   cursor:pointer;
@@ -124,7 +125,7 @@ body {width: 100%; height: 100vh; background-color: #262626;}
   left: -50%;
   transform: rotate(360deg);
   transition: all 5s ease;
-  animation: wave 30s linear infinite;
+  animation: wave 100s linear infinite;
 }
 @keyframes wave {
   0% { transform: rotate(0deg); }
@@ -138,7 +139,7 @@ body {width: 100%; height: 100vh; background-color: #262626;}
 
 .circleText{
     position: absolute;
-    top: 55%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
@@ -151,4 +152,81 @@ body {width: 100%; height: 100vh; background-color: #262626;}
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+
+.wave1{
+    background-color: #FF4560;
+}
+
+.wave2{
+    background-color: #008FFB;
+    border-radius: 31%;
+    transform: rotate(38deg);
+}
+
+.wave3{
+    background-color: #FEB019;
+    border-radius: 45%;
+
+    transform: rotate(310deg);
+}
+
+.wave4{
+    background-color: #00E396;
+    border-radius: 35%;
+
+    transform: rotate(210deg);
+}
+
+
+
+/*Balance*/
+
+.balance{
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 130px;
+    text-align: center;
+    position: relative;
+}
+
+.balance_block{
+    width: 100%;
+    padding: 10px 0;
+    border: 4px solid white;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    transition: 0.5s linear;
+    cursor: pointer;
+    height: 50px;
+}
+
+.balance_block:hover{
+    background-color: white;
+    color: black;
+}
+
+/* .balance_type{
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    opacity: 1;
+    z-index: 0;
+    background-color: red;
+} */
+
+.balance_text{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
