@@ -50,9 +50,49 @@ function UserPage() {
             <div className={styles.navbar_item}>QA</div>
           </div>
         </div>
-        <div className={styles.Diagramm}>
-          <div id="chart"></div>
+        <div className={styles.BlockInfo}>
+          <div className={styles.Diagramm}>
+            <div id="chart"></div>
+          </div>
+
+
+        <div className={styles.containerBottles}>
+          <div className={styles.Bottles}>
+            <div className={styles.center}>
+              <div className={styles.circle}>
+                <div className={styles.circleText}>Text</div>
+                <div className={styles.wave}></div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.Bottles}>
+            <div className={styles.center}>
+              <div className={styles.circle}>
+                <div className={styles.circleText}>Text</div>
+                <div className={styles.wave}></div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.Bottles}>
+            <div className={styles.center}>
+              <div className={styles.circle}>
+                <div className={styles.circleText}>Text</div>
+                <div className={styles.wave}></div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.Bottles}>
+            <div className={styles.center}>
+              <div className={styles.circle}>
+                <div className={styles.circleText}>Text</div>
+                <div className={styles.wave}></div>
+              </div>
+            </div>
+          </div>
+
+          </div>
         </div>
+
       </div>
     </div>
   )
